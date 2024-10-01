@@ -21,8 +21,5 @@ match inputs:
         for str in args:
             total = total + int(str)
         print("total:", total)
-    case ["hello", name] if name == "asep":
-        print("hello asep, apa kabar?")
-
-    case other:
-        print(f"perintah {other} tidak diketahui")
+    case _:
+        print("perintah tidak diketahui:")
